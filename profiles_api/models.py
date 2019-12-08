@@ -40,7 +40,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
-    # Django manager for UserProfile (make djungo able to create and interact with user)
+    # Django manager for UserProfile (make djungo able to interact with UserProfile)
     objects = UserProfileManager()
 
     # Require name field for authentification (Replace name by email)
